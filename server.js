@@ -20,7 +20,7 @@ app.use((req, res, next) => {
     next();
 });
 
-app.use((req, res, next) => res.render("maintenance.hbs", {pageTitle: "Maintenance"}) );
+//app.use((req, res, next) => res.render("maintenance.hbs", {pageTitle: "Maintenance"}) );
 app.use(express.static(__dirname + "/public"));
 
 hbs.registerHelper("getCurrentYear", () => {
